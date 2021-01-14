@@ -1,5 +1,5 @@
 # Trinity is a work in progress. 
-You can help me out by playtesting it when it becomes available, or by watching my stream [here](twitch.tv/trianreallyhard)!
+You can help me out by playtesting it when it becomes available, or by watching my stream [here](https://www.twitch.tv/trianreallyhard)!
 
 # What is Trinity?
 
