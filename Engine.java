@@ -3,10 +3,32 @@ public class Engine {
 
     Engine(int difficulty) {
         this.difficulty = difficulty;
-    }
+	}
+
+	public void list() {
+		String out = "name";
+		System.out.print(out);
+		out = "get_version";
+		System.out.print(out);
+		out = "protocol_version";
+		System.out.print(out);
+		out = "list_commands";
+		System.out.print(out);
+		System.out.println("\n");
+	}
 
 
-	public void playMove() {
-        System.out.println("W Q8");
-    }
+	public String getVersion() {
+		return "0.1 alpha";
+	}
+
+
+	public String getName() {
+		return "Trinity";
+	}
+
+
+	public int getProtocolVersion() {
+		return 2;
+	}
 }

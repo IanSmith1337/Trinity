@@ -3,18 +3,33 @@ Trinity by Ian Smith
 
 Trinity's base class, which handles all user input, and routes commands.
 */
-
+import java.util.Scanner;
 public class Trinity {
     public static void main(String[] args) {
         Engine trinity = new Engine(1);
-        String input = "";
+        Scanner scan = new Scanner(System.in);
+        String input;
         // Handle any arguments that were passed.
-        String[] options = args;
-        for (String arg : options) {
-            //TODO: Create Arg handling.
-        }
         do{
-            
-        } while(!input.equalsIgnoreCase("quit"));
+            input = scan.nextLine();
+            switch(input){
+                case "protocol_version":
+                    System.out.println(trinity.getProtocolVersion() + "\n");
+                    break;
+                case "name":
+                    System.out.println(trinity.getName() + "\n");
+                    break;
+                case "version":
+                    System.out.println(trinity.getVersion() + "\n");
+                    break;
+                case "list_commands":
+                    trinity.list();
+                    break;
+                default:
+                    break;
+            }
+            input = "";
+        } while(!input.equals("quit"));
+        scan.close();
     }
 }
