@@ -14,13 +14,13 @@ public class Trinity {
             input = scan.nextLine();
             switch(input){
                 case "protocol_version":
-                    System.out.println(trinity.getProtocolVersion() + "\n");
+                    System.out.println("=" + trinity.getProtocolVersion() + "\n");
                     break;
                 case "name":
-                    System.out.println(trinity.getName() + "\n");
+                    System.out.println("=" + trinity.getName() + "\n");
                     break;
                 case "version":
-                    System.out.println(trinity.getVersion() + "\n");
+                    System.out.println("=" + trinity.getVersion() + "\n");
                     break;
                 case "list_commands":
                     trinity.list();

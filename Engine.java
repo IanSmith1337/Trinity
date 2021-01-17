@@ -7,7 +7,7 @@ public class Engine {
 
 	public void list() {
 		String out = "name";
-		System.out.print(out);
+		System.out.print("=" + out);
 		out = "get_version";
 		System.out.print(out);
 		out = "protocol_version";
